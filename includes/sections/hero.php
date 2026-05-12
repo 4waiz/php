@@ -8,7 +8,7 @@
         <h1 class="hero__title">
             <span data-hero-span>INNOVATE<span class="hero__dot">.</span></span>
             <span data-hero-span>TRANSFORM<span class="hero__dot">.</span></span>
-            <span data-hero-span>ELEVATE<span class="hero__dot">.</span></span>
+            <span data-hero-span>WITH AWAIZ<span class="hero__dot">.</span></span>
         </h1>
         <p class="hero__sub" data-hero-sub>Empowering people, unleashing possibility</p>
         <a href="#about" class="btn btn--hero" data-hero-btn>
