@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGE — News</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        body.page-intro-active .hero__title>span,
+        body.page-intro-active .hero__sub,
+        body.page-intro-active .btn--hero,
+        body.page-intro-active .hero__logo {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+    
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGF5V2HR');</script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body class="">
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGF5V2HR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.php" class="navbar__logo" aria-label="BRIDGE Home">
+                    <img src="assets/images/logo_bridge_.svg" alt="BRIDGE">
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item ">
+                        <a href="index.php"
+                            class="navbar__link "
+                            >Home</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="about-us.php"
+                            class="navbar__link "
+                            >About Us</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="our-services.php"
+                            class="navbar__link "
+                            >Our Services</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="ecosystem.php"
+                            class="navbar__link "
+                            >Our Ecosystem</a>
+                    </li>
+                    <li class="navbar__item navbar__item--active">
+                        <a href="news.php"
+                            class="navbar__link navbar__link--active"
+                            aria-current="page">News</a>
+                    </li>
+                    <!-- <li class="navbar__item ">
+                        <a href="articles.php" class="navbar__link">Articles</a>
+                    </li> -->
+                    <li class="navbar__item ">
+                        <a href="contact-us.php"
+                            class="navbar__link "
+                            >Contact Us</a>
+                    </li>
+                </ul>
+                <div class="navbar__right">
+                    <!-- <a href="#" class="navbar__lang" lang="ar" dir="rtl">العربية</a>
+                    <button class="navbar__search" aria-label="Search">
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1383 16.5873L9.8575 10.5273C9.3575 10.9256 8.7825 11.2374 8.1325 11.4625C7.4825 11.6876 6.81008 11.8002 6.11525 11.8002C4.40608 11.8002 2.95958 11.2292 1.77575 10.0874C0.591917 8.94552 0 7.55024 0 5.90153C0 4.25298 0.59175 2.85722 1.77525 1.71423C2.95875 0.571412 4.40492 0 6.11375 0C7.82242 0 9.26908 0.571089 10.4537 1.71327C11.6382 2.85545 12.2305 4.25105 12.2305 5.90008C12.2305 6.58912 12.1107 7.24721 11.871 7.87434C11.6312 8.50147 11.3113 9.04691 10.9113 9.51066L17.192 15.5704L16.1383 16.5873ZM6.11525 10.3532C7.40375 10.3532 8.49508 9.92175 9.38925 9.05889C10.2836 8.19618 10.7308 7.14325 10.7308 5.90008C10.7308 4.65692 10.2836 3.60398 9.38925 2.74128C8.49508 1.87841 7.40375 1.44698 6.11525 1.44698C4.82675 1.44698 3.73542 1.87841 2.84125 2.74128C1.94692 3.60398 1.49975 4.65692 1.49975 5.90008C1.49975 7.14325 1.94692 8.19618 2.84125 9.05889C3.73542 9.92175 4.82675 10.3532 6.11525 10.3532Z"
+                                fill="white" />
+                        </svg>
+                    </button> -->
+                    <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+<main class="news-page inner-page-top" data-news-page>
+
+    <section class="news-page__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="news-page__header">
+                        <h1 class="news-page__title title-animation">Latest News</h1>
+                    </header>
+
+                    <div class="news-page__filters revealmetop" style="display:none">
+                        <div class="news-page__tabs" role="tablist" aria-label="News categories">
+                            <button class="news-page__tab news-page__tab--active" type="button" data-news-filter="all"
+                                aria-pressed="true">All</button>
+                            <button class="news-page__tab" type="button" data-news-filter="defence"
+                                aria-pressed="false">Defence</button>
+                            <button class="news-page__tab" type="button" data-news-filter="manufacturing"
+                                aria-pressed="false">Manufacturing</button>
+                            <button class="news-page__tab" type="button" data-news-filter="made-in-uae"
+                                aria-pressed="false">Made in UAE</button>
+                            <button class="news-page__tab" type="button" data-news-filter="partnerships"
+                                aria-pressed="false">Partnerships</button>
+                            <button class="news-page__tab" type="button" data-news-filter="innovation"
+                                aria-pressed="false">Innovation</button>
+                            <button class="news-page__tab" type="button" data-news-filter="mou"
+                                aria-pressed="false">MoU</button>
+                            <button class="news-page__tab" type="button" data-news-filter="industry-4-0"
+                                aria-pressed="false">Industry 4.0</button>
+                        </div>
+
+                        <label class="news-page__select-wrap" for="newsCategory">
+                            <span class="news-page__select-label">Category</span>
+                            <select class="news-page__select" id="newsCategory" aria-label="Select news category">
+                                <option value="all">All</option>
+                                <option value="defence">Defence</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="made-in-uae">Made in UAE</option>
+                                <option value="partnerships">Partnerships</option>
+                                <option value="innovation">Innovation</option>
+                                <option value="mou">MoU</option>
+                                <option value="industry-4-0">Industry 4.0</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="news__list news-page__list" data-news-list>
+                                                <article class="news__item news-page__item" data-news-entry
+                            data-news-categories="defence,manufacturing">
+                            <div class="news__meta">
+                                                                <span class="news__tag">Defence</span>
+                                                                <span class="news__tag">Manufacturing</span>
+                                                            </div>
+
+                            <div class="news__grid">
+                                <div class="news__lead">
+                                    <h2 class="news__headline title-animation">EDGE CHARTS DEFENCE MANUFACTURING PROGRESS AT MAKE IT IN THE EMIRATES 2026</h2>
+                                </div>
+
+                                <div class="news__copy">
+                                    <p>EDGE Group will participate as an Enablement Partner at Make It in the Emirates (MIITE) 2026, spotlighting its landmark achievements in supply chain localisation, smart manufacturing, talent development, and technological advancements. The Group's participation underscores its pivotal role in advancing the UAE's industrial defence sovereignty and its full alignment with Operation 300bn and the MIITE initiative.</p>
+                                </div>
+
+                                <a class="news__media" href="https://edgegroup.ae/news/edge-charts-defence-manufacturing-progress-make-it-emirates-2026"
+                                    aria-label="Read EDGE charts defence manufacturing progress article" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/news_01.webp"
+                                        alt="EDGE Group at Make It In The Emirates 2026">
+                                </a>
+
+                                <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-charts-defence-manufacturing-progress-make-it-emirates-2026" target="_blank" rel="noopener noreferrer">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                                                <article class="news__item news-page__item" data-news-entry
+                            data-news-categories="defence,made-in-uae">
+                            <div class="news__meta">
+                                                                <span class="news__tag">Defence</span>
+                                                                <span class="news__tag">Made in UAE</span>
+                                                            </div>
+
+                            <div class="news__grid">
+                                <div class="news__lead">
+                                    <h2 class="news__headline title-animation">EDGE CHAMPIONS MADE IN UAE DEFENCE CAPABILITIES AT MIITE 2025</h2>
+                                </div>
+
+                                <div class="news__copy">
+                                    <p>As the UAE's national champion for advanced technology and defence manufacturing, EDGE Group is using its presence at the Make it in the Emirates Forum 2025 (MIITE 2025) to showcase its central role in accelerating the UAE's sovereign defence industry and building a globally competitive industrial ecosystem.</p>
+                                </div>
+
+                                <a class="news__media" href="https://edgegroup.ae/news/edge-champions-made-uae-defence-capabilities-miite-2025"
+                                    aria-label="Read EDGE champions Made in UAE defence capabilities article" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/news_02.webp"
+                                        alt="EDGE Group at MIITE 2025">
+                                </a>
+
+                                <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-champions-made-uae-defence-capabilities-miite-2025" target="_blank" rel="noopener noreferrer">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                                                <article class="news__item news-page__item" data-news-entry
+                            data-news-categories="partnerships,innovation">
+                            <div class="news__meta">
+                                                                <span class="news__tag">Partnerships</span>
+                                                                <span class="news__tag">Innovation</span>
+                                                            </div>
+
+                            <div class="news__grid">
+                                <div class="news__lead">
+                                    <h2 class="news__headline title-animation">EDGE BRIDGE ESTABLISHES PARTNERSHIP WITH QUANTASIM TO EMPOWER LOCAL TALENT IN INNOVATIVE ENGINEERING</h2>
+                                </div>
+
+                                <div class="news__copy">
+                                    <p>EDGE's Learning and Innovation Factory (BRIDGE), a hub that offers advanced upskilling and technology-driven solutions to enhance manufacturing excellence and innovation in the defence and industrial sectors, has announced a collaboration with QuantaSim, a leading consulting and training firm specialising in cutting-edge engineering solutions, for an Engineering Bootcamp Program.</p>
+                                </div>
+
+                                <a class="news__media" href="https://edgegroup.ae/news/edge-lif-establishes-partnership-quantasim-empower-local-talent-innovative-engineering"
+                                    aria-label="Read EDGE BRIDGE establishes partnership with Quantasim article" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/news_03.webp"
+                                        alt="EDGE BRIDGE and Quantasim partnership">
+                                </a>
+
+                                <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-lif-establishes-partnership-quantasim-empower-local-talent-innovative-engineering" target="_blank" rel="noopener noreferrer">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                                                <article class="news__item news-page__item" data-news-entry
+                            data-news-categories="mou,industry-4-0">
+                            <div class="news__meta">
+                                                                <span class="news__tag">MoU</span>
+                                                                <span class="news__tag">Industry 4.0</span>
+                                                            </div>
+
+                            <div class="news__grid">
+                                <div class="news__lead">
+                                    <h2 class="news__headline title-animation">EDGE AND MINISTRY OF INDUSTRY AND ADVANCED TECHNOLOGY SIGN MOU TO ADVANCE UAE&#039;S INDUSTRY 4.0</h2>
+                                </div>
+
+                                <div class="news__copy">
+                                    <p>Under the National Strategy for Industry and Advanced Technology, Operation 300bn, EDGE Group's Learning &amp; Innovation Factory (BRIDGE) and the Ministry of Industry and Advanced Technology (MoIAT) have signed a Memorandum of Understanding (MoU). BRIDGE is a hub that offers advanced upskilling and technology-driven solutions to enhance manufacturing excellence and innovation in the defence and industrial sectors.</p>
+                                </div>
+
+                                <a class="news__media" href="https://edgegroup.ae/news/edge-and-ministry-industry-and-advanced-technology-sign-mou-advance-uaes-industry-40"
+                                    aria-label="Read EDGE and Ministry of Industry sign MoU article" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/news_04.webp"
+                                        alt="EDGE and MoIAT MoU signing">
+                                </a>
+
+                                <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-and-ministry-industry-and-advanced-technology-sign-mou-advance-uaes-industry-40" target="_blank" rel="noopener noreferrer">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                            viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                                            </div>
+
+                    <div class="news-page__pagination revealmetop" data-news-pagination>
+                        <button class="news-page__page-button news-page__page-button--icon" type="button" data-news-prev
+                            aria-label="Previous page">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.667 5L6.667 10L11.667 15" stroke="currentColor" stroke-width="1.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="news-page__page-list" data-news-page-list></div>
+                        <button class="news-page__page-button news-page__page-button--icon" type="button" data-news-next
+                            aria-label="Next page">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.333 5L13.333 10L8.333 15" stroke="currentColor" stroke-width="1.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+<footer class="footer">
+    <div class="footer__line"></div>
+    <a href="index.php" class="footer__brand" aria-label="BRIDGE home">
+        <img src="assets/images/logo_bridge_.svg" alt="BRIDGE">
+    </a>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="index.php">Home</a>
+        <a href="about-us.php">About Us</a>
+        <a href="our-services.php">Our Services</a>
+        <a href="ecosystem.php">Our Ecosystem</a>
+        <a href="news.php">News</a>
+        <!-- <a href="articles.php">Articles</a> -->
+        <a href="contact-us.php">Contact Us</a>
+    </nav>
+
+    <div class="footer__legal">
+        <span>Copyright &copy; 2026 EDGE Group PJSC</span>
+        <span class="footer__dot"></span>
+        <a href="#">Privacy Policy</a>
+    </div>
+</footer>
+
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/vendor/split-type.min.js"></script>
+<script src="assets/js/main.js?v=10"></script>
+
+</body>
+
+</html>

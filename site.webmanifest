@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGE — Innovate. Transform. Elevate.</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        body.page-intro-active .hero__title>span,
+        body.page-intro-active .hero__sub,
+        body.page-intro-active .btn--hero,
+        body.page-intro-active .hero__logo {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/vendor/odometer-theme-default.css">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGF5V2HR');</script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body class="page-intro-active">
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGF5V2HR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+            <div class="page-intro" data-page-intro aria-hidden="true">
+            <div class="page-intro__logo-wrap">
+                <img class="page-intro__logo" src="assets/images/banner-bridge__loader.svg" alt="BRIDGE">
+            </div>
+        </div>
+    
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.php" class="navbar__logo" aria-label="BRIDGE Home">
+                    <img src="assets/images/logo_bridge_.svg" alt="BRIDGE">
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item navbar__item--active">
+                        <a href="index.php"
+                            class="navbar__link navbar__link--active"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="about-us.php"
+                            class="navbar__link "
+                            >About Us</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="our-services.php"
+                            class="navbar__link "
+                            >Our Services</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="ecosystem.php"
+                            class="navbar__link "
+                            >Our Ecosystem</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="news.php"
+                            class="navbar__link "
+                            >News</a>
+                    </li>
+                    <!-- <li class="navbar__item ">
+                        <a href="articles.php" class="navbar__link">Articles</a>
+                    </li> -->
+                    <li class="navbar__item ">
+                        <a href="contact-us.php"
+                            class="navbar__link "
+                            >Contact Us</a>
+                    </li>
+                </ul>
+                <div class="navbar__right">
+                    <!-- <a href="#" class="navbar__lang" lang="ar" dir="rtl">العربية</a>
+                    <button class="navbar__search" aria-label="Search">
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1383 16.5873L9.8575 10.5273C9.3575 10.9256 8.7825 11.2374 8.1325 11.4625C7.4825 11.6876 6.81008 11.8002 6.11525 11.8002C4.40608 11.8002 2.95958 11.2292 1.77575 10.0874C0.591917 8.94552 0 7.55024 0 5.90153C0 4.25298 0.59175 2.85722 1.77525 1.71423C2.95875 0.571412 4.40492 0 6.11375 0C7.82242 0 9.26908 0.571089 10.4537 1.71327C11.6382 2.85545 12.2305 4.25105 12.2305 5.90008C12.2305 6.58912 12.1107 7.24721 11.871 7.87434C11.6312 8.50147 11.3113 9.04691 10.9113 9.51066L17.192 15.5704L16.1383 16.5873ZM6.11525 10.3532C7.40375 10.3532 8.49508 9.92175 9.38925 9.05889C10.2836 8.19618 10.7308 7.14325 10.7308 5.90008C10.7308 4.65692 10.2836 3.60398 9.38925 2.74128C8.49508 1.87841 7.40375 1.44698 6.11525 1.44698C4.82675 1.44698 3.73542 1.87841 2.84125 2.74128C1.94692 3.60398 1.49975 4.65692 1.49975 5.90008C1.49975 7.14325 1.94692 8.19618 2.84125 9.05889C3.73542 9.92175 4.82675 10.3532 6.11525 10.3532Z"
+                                fill="white" />
+                        </svg>
+                    </button> -->
+                    <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+<main>
+
+    <!-- ============================================================
+             HERO
+        ============================================================ -->
+    <section class="hero" id="home">
+        <div class="hero__video-wrap">
+            <iframe src="https://player.vimeo.com/video/1186158251?background=1&autoplay=1&muted=1&loop=1&quality=auto"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Hero background video"></iframe>
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span data-hero-span>INNOVATE<span class="hero__dot">.</span></span>
+                <span data-hero-span>TRANSFORM<span class="hero__dot">.</span></span>
+                <span data-hero-span>ELEVATE<span class="hero__dot">.</span></span>
+            </h1>
+            <!-- <img src="assets/images/banner-bridge_.svg" alt="Bridge" class="hero__logo" data-hero-span> -->
+            <p class="hero__sub" data-hero-sub>Empowering people, unleashing possibility
+            </p>
+            <a href="#about" class="btn btn--hero" data-hero-btn>
+                Learn More
+                <span class="btn__icon" aria-hidden="true">
+                    <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================
+             BANNER (About)
+        ============================================================ -->
+    <section class="banner" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner__card">
+                        <div class="banner__content">
+                            <div class="banner__text">
+                                <!-- <span class="banner__num revealmetop">01</span> -->
+                                <h2 class="banner__heading title-animation">A world-class business
+                                    transformation Centre of Excellence in the Middle East</h2>
+                            </div>
+                            <div class="banner__divider" aria-hidden="true"></div>
+                            <div class="banner__image revealmetop">
+                                <img src="assets/images/about-bg.jpeg" alt="Business transformation">
+                            </div>
+                            <div class="banner__divider" aria-hidden="true"></div>
+                            <div class="banner__description title-animation">
+                                <p>Launched in 2021, BRIDGE delivers high-impact projects at scale across all areas
+                                    of
+                                    organisational development, with a focus on fostering innovation, future
+                                    readiness, and
+                                    operational improvements that achieve measurable gains in efficiency, execution,
+                                    quality,
+                                    and sustainability.</p>
+                                <p>Through four service offerings – strategic consulting; business transformation;
+                                    professional
+                                    development; and hackathons, makeathons and innovation challenges – we provide
+                                    an
+                                    integrated, tailored approach to help organisations overcome challenges and
+                                    achieve their
+                                    ambitions.</p>
+                                <p>At the heart of this work are people – the driving force behind any
+                                    organisation's success.
+                                    At BRIDGE, we equip your people with the tools, systems thinking, preparation
+                                    and insights
+                                    to elevate your organisation to the next level.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+             ACHIEVEMENTS
+        ============================================================ -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="achievements__grid achievements__grid--three">
+                        <article class="achievements__card revealmetop">
+                            <h3 class="achievements__label title-animation">Programs launched</h3>
+                            <div class="achievements__value achievements__value--plus">
+                                <span class="odometer achievements__odometer" data-target="72" data-format="d">0</span>
+                            </div>
+                        </article>
+
+                        <article class="achievements__card revealmetop">
+                            <h3 class="achievements__label title-animation">Interactive simulations and games</h3>
+                            <div class="achievements__value achievements__value--plus">
+                                <span class="odometer achievements__odometer" data-target="25" data-format="d">0</span>
+                            </div>
+                        </article>
+
+                        <article class="achievements__card revealmetop">
+                            <h3 class="achievements__label title-animation">Global certifications</h3>
+                            <div class="achievements__value ">
+                                <span class="odometer achievements__odometer" data-target="7" data-format="d">0</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="achievements__grid achievements__grid--two">
+                        <article class="achievements__card revealmetop">
+                            <h3 class="achievements__label title-animation">Trainee days</h3>
+                            <div class="achievements__value achievements__value--plus">
+                                <span class="odometer achievements__odometer" data-target="22098"
+                                    data-format="(,ddd)">0</span>
+                            </div>
+                        </article>
+
+                        <article class="achievements__card revealmetop">
+                            <h3 class="achievements__label title-animation">NPS participation, advocacy, and
+                                satisfaction</h3>
+                            <div class="achievements__value achievements__value--suffix achievements__value--gt">
+                                <span class="odometer achievements__odometer" data-target="95" data-format="d">0</span>
+                                <span class="achievements__suffix">%</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+             SERVICES
+        ============================================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="services__pin-wrap" id="servicesPinWrap">
+                        <div class="services__sticky" id="servicesSticky">
+                            <div class="services__header">
+                                <h2 class="services__title title-animation">Our Services</h2>
+                            </div>
+
+                            <div class="services__stack" id="servicesStack">
+                                <article class="services__card" data-service-card data-service-index="0">
+                                    <span class="services__bar"></span>
+                                    <span class="services__glow"></span>
+                                    <span class="services__shim" id="servicesShim0"></span>
+                                    <span class="services__index">01</span>
+                                    <span class="services__name">Strategic Consulting</span>
+                                    <span class="services__arrow" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 14L14 4M14 4H7.5M14 4V10.5" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </article>
+
+                                <article class="services__card" data-service-card data-service-index="1">
+                                    <span class="services__bar"></span>
+                                    <span class="services__glow"></span>
+                                    <span class="services__shim" id="servicesShim1"></span>
+                                    <span class="services__index">02</span>
+                                    <span class="services__name">Business Transformation and Advanced
+                                        Solutions</span>
+                                    <span class="services__arrow" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 14L14 4M14 4H7.5M14 4V10.5" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </article>
+
+                                <article class="services__card" data-service-card data-service-index="2">
+                                    <span class="services__bar"></span>
+                                    <span class="services__glow"></span>
+                                    <span class="services__shim" id="servicesShim2"></span>
+                                    <span class="services__index">03</span>
+                                    <span class="services__name">Upskilling Programs</span>
+                                    <span class="services__arrow" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 14L14 4M14 4H7.5M14 4V10.5" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </article>
+
+                                <article class="services__card" data-service-card data-service-index="3">
+                                    <span class="services__bar"></span>
+                                    <span class="services__glow"></span>
+                                    <span class="services__shim" id="servicesShim3"></span>
+                                    <span class="services__index">04</span>
+                                    <span class="services__name">Hackathons, Makeathons, Innovation
+                                        Challenges</span>
+                                    <span class="services__arrow" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 14L14 4M14 4H7.5M14 4V10.5" stroke="currentColor"
+                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+             ECOSYSTEM
+        ============================================================ -->
+    <!-- <section class="ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="ecosystem__header">
+                        <h2 class="ecosystem__title title-animation">Our Ecosystem</h2>
+                    </div>
+
+                    <div class="ecosystem__marquee">
+                        <div class="ecosystem__fade ecosystem__fade--left" aria-hidden="true"></div>
+                        <div class="ecosystem__fade ecosystem__fade--right" aria-hidden="true"></div>
+
+                        <div class="ecosystem__track" data-ecosystem-track>
+                            <div class="ecosystem__group">
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-1.png"
+                                        alt="Ecosystem partner 1"></div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-2.png"
+                                        alt="Ecosystem partner 2"></div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-3.png"
+                                        alt="Ecosystem partner 3"></div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-4.png"
+                                        alt="Ecosystem partner 4"></div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-5.png"
+                                        alt="Ecosystem partner 5"></div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-6.png"
+                                        alt="Ecosystem partner 6"></div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-7.png"
+                                        alt="Ecosystem partner 7"></div>
+                            </div>
+
+                            <div class="ecosystem__group" aria-hidden="true">
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-1.png" alt="">
+                                </div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-2.png" alt="">
+                                </div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-3.png" alt="">
+                                </div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-4.png" alt="">
+                                </div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-5.png" alt="">
+                                </div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-6.png" alt="">
+                                </div>
+                                <div class="ecosystem__logo"><img src="assets/images/ecosystem/logo-7.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ============================================================
+             LATEST NEWS
+        ============================================================ -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="news__header revealmetop">
+                        <h2 class="news__title title-animation">Latest News</h2>
+                        <a class="news__cta btn" href="news.php">
+                            <span>Explore All News</span>
+                            <span class="btn__icon" aria-hidden="true">
+                                <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="news__list">
+                                                    <article class="news__item" data-news-item>
+                                <div class="news__meta">
+                                                                            <span class="news__tag">Defence</span>
+                                                                            <span class="news__tag">Manufacturing</span>
+                                                                    </div>
+
+                                <div class="news__grid">
+                                    <div class="news__lead">
+                                        <h3 class="news__headline title-animation">
+                                            EDGE CHARTS DEFENCE MANUFACTURING PROGRESS AT MAKE IT IN THE EMIRATES 2026                                        </h3>
+                                        <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-charts-defence-manufacturing-progress-make-it-emirates-2026"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <span>Read More</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="news__copy title-animation">
+                                        <p>EDGE Group will participate as an Enablement Partner at Make It in the Emirates (MIITE) 2026, spotlighting its landmark achievements in supply chain localisation, smart manufacturing, talent development, and technological advancements. The Group's participation underscores its pivotal role in advancing the UAE's industrial defence sovereignty and its full alignment with Operation 300bn and the MIITE initiative.</p>
+                                    </div>
+
+                                    <a class="news__media" href="https://edgegroup.ae/news/edge-charts-defence-manufacturing-progress-make-it-emirates-2026"
+                                        aria-label="Read EDGE charts defence manufacturing progress article" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/images/news_01.webp"
+                                            alt="EDGE Group at Make It In The Emirates 2026">
+                                    </a>
+                                </div>
+                            </article>
+                                                    <article class="news__item" data-news-item>
+                                <div class="news__meta">
+                                                                            <span class="news__tag">Defence</span>
+                                                                            <span class="news__tag">Made in UAE</span>
+                                                                    </div>
+
+                                <div class="news__grid">
+                                    <div class="news__lead">
+                                        <h3 class="news__headline title-animation">
+                                            EDGE CHAMPIONS MADE IN UAE DEFENCE CAPABILITIES AT MIITE 2025                                        </h3>
+                                        <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-champions-made-uae-defence-capabilities-miite-2025"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <span>Read More</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="news__copy title-animation">
+                                        <p>As the UAE's national champion for advanced technology and defence manufacturing, EDGE Group is using its presence at the Make it in the Emirates Forum 2025 (MIITE 2025) to showcase its central role in accelerating the UAE's sovereign defence industry and building a globally competitive industrial ecosystem.</p>
+                                    </div>
+
+                                    <a class="news__media" href="https://edgegroup.ae/news/edge-champions-made-uae-defence-capabilities-miite-2025"
+                                        aria-label="Read EDGE champions Made in UAE defence capabilities article" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/images/news_02.webp"
+                                            alt="EDGE Group at MIITE 2025">
+                                    </a>
+                                </div>
+                            </article>
+                                                    <article class="news__item" data-news-item>
+                                <div class="news__meta">
+                                                                            <span class="news__tag">Partnerships</span>
+                                                                            <span class="news__tag">Innovation</span>
+                                                                    </div>
+
+                                <div class="news__grid">
+                                    <div class="news__lead">
+                                        <h3 class="news__headline title-animation">
+                                            EDGE BRIDGE ESTABLISHES PARTNERSHIP WITH QUANTASIM TO EMPOWER LOCAL TALENT IN INNOVATIVE ENGINEERING                                        </h3>
+                                        <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-lif-establishes-partnership-quantasim-empower-local-talent-innovative-engineering"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <span>Read More</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="news__copy title-animation">
+                                        <p>EDGE's Learning and Innovation Factory (BRIDGE), a hub that offers advanced upskilling and technology-driven solutions to enhance manufacturing excellence and innovation in the defence and industrial sectors, has announced a collaboration with QuantaSim, a leading consulting and training firm specialising in cutting-edge engineering solutions, for an Engineering Bootcamp Program.</p>
+                                    </div>
+
+                                    <a class="news__media" href="https://edgegroup.ae/news/edge-lif-establishes-partnership-quantasim-empower-local-talent-innovative-engineering"
+                                        aria-label="Read EDGE BRIDGE establishes partnership with Quantasim article" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/images/news_03.webp"
+                                            alt="EDGE BRIDGE and Quantasim partnership">
+                                    </a>
+                                </div>
+                            </article>
+                                                    <article class="news__item" data-news-item>
+                                <div class="news__meta">
+                                                                            <span class="news__tag">MoU</span>
+                                                                            <span class="news__tag">Industry 4.0</span>
+                                                                    </div>
+
+                                <div class="news__grid">
+                                    <div class="news__lead">
+                                        <h3 class="news__headline title-animation">
+                                            EDGE AND MINISTRY OF INDUSTRY AND ADVANCED TECHNOLOGY SIGN MOU TO ADVANCE UAE&#039;S INDUSTRY 4.0                                        </h3>
+                                        <a class="news__readmore btn" href="https://edgegroup.ae/news/edge-and-ministry-industry-and-advanced-technology-sign-mou-advance-uaes-industry-40"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <span>Read More</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="news__copy title-animation">
+                                        <p>Under the National Strategy for Industry and Advanced Technology, Operation 300bn, EDGE Group's Learning &amp; Innovation Factory (BRIDGE) and the Ministry of Industry and Advanced Technology (MoIAT) have signed a Memorandum of Understanding (MoU). BRIDGE is a hub that offers advanced upskilling and technology-driven solutions to enhance manufacturing excellence and innovation in the defence and industrial sectors.</p>
+                                    </div>
+
+                                    <a class="news__media" href="https://edgegroup.ae/news/edge-and-ministry-industry-and-advanced-technology-sign-mou-advance-uaes-industry-40"
+                                        aria-label="Read EDGE and Ministry of Industry sign MoU article" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/images/news_04.webp"
+                                            alt="EDGE and MoIAT MoU signing">
+                                    </a>
+                                </div>
+                            </article>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+             ARTICLES
+        ============================================================ -->
+    <!-- <section class="articles" id="articles">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="articles__header revealmetop">
+                        <h2 class="articles__title title-animation">Featured Articles &amp; Insights</h2>
+                        <a class="articles__cta btn" href="#articles">
+                            <span>Explore All Articles</span>
+                            <span class="btn__icon" aria-hidden="true">
+                                <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="articles__grid">
+                        <article class="articles__card" data-article-card>
+                            <a class="articles__media" href="#articles" aria-label="Read smart manufacturing article">
+                                <img src="assets/images/article-1-image.webp" alt="Abstract grayscale folded surface">
+                            </a>
+                            <div class="articles__body">
+                                <h3 class="articles__headline title-animation">THE FUTURE OF SMART MANUFACTURING:
+                                    HOW INDUSTRY 4.0
+                                    IS TRANSFORMING FACTORIES</h3>
+                                <p class="articles__excerpt title-animation">The shift towards smart factories is
+                                    revolutionizing
+                                    industries with automation, IoT, and AI-driven analytics. Learn how businesses
+                                    are leveraging these technologies to boost efficiency, reduce costs, and stay
+                                    ahead in the competitive market.</p>
+                                <a class="articles__readmore btn" href="#articles">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="articles__card" data-article-card>
+                            <a class="articles__media" href="#articles" aria-label="Read digital twins article">
+                                <img src="assets/images/article-2-image.webp" alt="Abstract dark circular line pattern">
+                            </a>
+                            <div class="articles__body">
+                                <h3 class="articles__headline title-animation">DIGITAL TWINS: THE KEY TO OPTIMIZED
+                                    INDUSTRIAL
+                                    OPERATIONS</h3>
+                                <p class="articles__excerpt title-animation">Digital Twin Technology allows
+                                    businesses to create
+                                    real-time virtual models of their physical operations, enabling predictive
+                                    maintenance, process optimization, and improved decision-making. Discover how
+                                    this innovation is reshaping the manufacturing landscape.</p>
+                                <a class="articles__readmore btn" href="#articles">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="articles__card" data-article-card>
+                            <a class="articles__media" href="#articles" aria-label="Read upskilling future article">
+                                <img src="assets/images/article-3-image.webp" alt="Abstract grayscale layered shapes">
+                            </a>
+                            <div class="articles__body">
+                                <h3 class="articles__headline title-animation">UPSKILLING FOR THE FUTURE: WHY
+                                    DIGITAL LITERACY IS
+                                    ESSENTIAL IN INDUSTRY 4.0</h3>
+                                <p class="articles__excerpt title-animation">With AI, automation, and smart
+                                    technologies redefining
+                                    job roles, businesses must invest in upskilling their workforce. Explore the
+                                    essential skills required for the future of work and how training programs are
+                                    bridging the gap.</p>
+                                <a class="articles__readmore btn" href="#articles">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="articles__card" data-article-card>
+                            <a class="articles__media" href="#articles" aria-label="Read smart factory roadmap article">
+                                <img src="assets/images/article-4-image.webp" alt="Abstract black ribbon texture">
+                            </a>
+                            <div class="articles__body">
+                                <h3 class="articles__headline title-animation">FROM TRADITIONAL TO DIGITAL: THE
+                                    ROADMAP TO SMART
+                                    FACTORY IMPLEMENTATION</h3>
+                                <p class="articles__excerpt title-animation">Transitioning from conventional
+                                    manufacturing to a
+                                    smart factory requires careful planning and execution. This article breaks down
+                                    the step-by-step approach to successfully adopting digital transformation
+                                    strategies in industries.</p>
+                                <a class="articles__readmore btn" href="#articles">
+                                    <span>Read More</span>
+                                    <span class="btn__icon" aria-hidden="true">
+                                        <svg class="btn__arrow btn__arrow--a" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="btn__arrow btn__arrow--b" width="13" height="13" viewBox="0 0 13 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ============================================================
+             AWARDS
+        ============================================================ -->
+    <section class="awards" id="awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="awards__layout">
+                        <div class="awards__intro revealmetop">
+                            <h2 class="awards__title title-animation">Awards and Certifications</h2>
+                        </div>
+
+                        <div class="awards__grid">
+                            <article class="awards__card revealmetop" style="--reveal-delay: 0.06s">
+                                <div class="awards__card-glow"></div>
+                                <div class="awards__card-content">
+                                    <h3 class="awards__card-title title-animation">ISO 21001:2025 Certification</h3>
+                                    <a class="awards__link" href="#awards">
+                                        <span>Learn More</span>
+                                        <span class="btn__icon" aria-hidden="true">
+                                            <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="awards__card revealmetop" style="--reveal-delay: 0.12s">
+                                <div class="awards__card-glow"></div>
+                                <div class="awards__card-content">
+                                    <h3 class="awards__card-title title-animation">Lead Operational Excellence Award
+                                    </h3>
+                                    <a class="awards__link" href="#awards">
+                                        <span>Learn More</span>
+                                        <span class="btn__icon" aria-hidden="true">
+                                            <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620" stroke-width="1.6"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+             CONTACT
+        ============================================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact__shell">
+                        <div class="contact__stage">
+                            <div class="contact__info revealmetop">
+                                <div class="contact__intro">
+                                    <h2 class="contact__title title-animation">Contact Us</h2>
+                                    <p class="contact__description title-animation">We're here to help! Whether you
+                                        have questions
+                                        about our services, want to explore partnership opportunities, or need
+                                        expert guidance, feel free to reach out to us.</p>
+                                </div>
+
+                                <div class="contact__details">
+                                    <article class="contact__detail">
+                                        <h3 class="contact__detail-title">Address</h3>
+                                        <p class="contact__detail-copy">Al Rubban Street, Al Bahyah <br> P.O. Box 43221,
+                                            <br>Abu Dhabi, UAE
+                                        </p>
+                                        <a class="contact__detail-link"
+                                            href="https://maps.google.com/?q=Rabdan+Al+Maqta+Abu+Dhabi+UAE"
+                                            target="_blank" rel="noreferrer">
+                                            <span>Get Directions</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620"
+                                                        stroke-width="1.6" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#fff" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </article>
+
+                                    <article class="contact__detail">
+                                        <h3 class="contact__detail-title">Phone Number</h3>
+                                        <p class="contact__detail-copy">+97122056500</p>
+                                        <a class="contact__detail-link" href="tel:+97122056500">
+                                            <span>Make a Call</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620"
+                                                        stroke-width="1.6" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#fff" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </article>
+
+                                    <article class="contact__detail">
+                                        <h3 class="contact__detail-title">Email</h3>
+                                        <p class="contact__detail-copy">BRIDGE@edgegroup.ae</p>
+                                        <a class="contact__detail-link" href="mailto:BRIDGE@edgegroup.ae">
+                                            <span>Send An Email</span>
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#FE5620"
+                                                        stroke-width="1.6" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="#fff" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="contact__form-card revealmetop">
+                                <div class="contact__form-border"></div>
+                                <div class="contact__form-panel">
+                                    <div class="contact__form-header">
+                                        <h2 class="contact__form-title title-animation">Get In Touch</h2>
+                                        <p class="contact__form-copy">We'd love to hear from you! Fill out the form
+                                            below, and our team will get back to you as soon as possible.</p>
+                                    </div>
+
+                                    <form class="contact__form" action="#" method="post">
+                                        <label class="contact__field">
+                                            <input type="text" name="full_name" placeholder="Full name">
+                                        </label>
+                                        <label class="contact__field">
+                                            <input type="email" name="email" placeholder="Email Address">
+                                        </label>
+                                        <label class="contact__field contact__field--phone">
+                                            <span class="contact__prefix">+971</span>
+                                            <input type="tel" name="mobile" placeholder="Mobile Number">
+                                        </label>
+                                        <label class="contact__field contact__field--textarea">
+                                            <textarea name="message" rows="5" placeholder="Message"></textarea>
+                                        </label>
+
+                                        <button class="btn btn--hero contact__submit" type="submit">
+                                            Get In Touch
+                                            <span class="btn__icon" aria-hidden="true">
+                                                <svg class="btn__arrow btn__arrow--a" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="btn__arrow btn__arrow--b" width="13" height="13"
+                                                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 11L11 2M11 2H5M11 2V8" stroke="white" stroke-width="1.6"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- end contact__stage -->
+                    </div><!-- end contact__shell -->
+                </div><!-- end col-12 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end .contact -->
+
+    </main>
+
+<footer class="footer">
+    <div class="footer__line"></div>
+    <a href="index.php" class="footer__brand" aria-label="BRIDGE home">
+        <img src="assets/images/logo_bridge_.svg" alt="BRIDGE">
+    </a>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="index.php">Home</a>
+        <a href="about-us.php">About Us</a>
+        <a href="our-services.php">Our Services</a>
+        <a href="ecosystem.php">Our Ecosystem</a>
+        <a href="news.php">News</a>
+        <!-- <a href="articles.php">Articles</a> -->
+        <a href="contact-us.php">Contact Us</a>
+    </nav>
+
+    <div class="footer__legal">
+        <span>Copyright &copy; 2026 EDGE Group PJSC</span>
+        <span class="footer__dot"></span>
+        <a href="#">Privacy Policy</a>
+    </div>
+</footer>
+
+<script src="assets/js/vendor/odometer.js"></script><script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/vendor/split-type.min.js"></script>
+<script src="assets/js/main.js?v=10"></script>
+
+</body>
+
+</html>
