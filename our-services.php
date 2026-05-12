@@ -2,6 +2,7 @@
 $CURRENT_PAGE = 'our-services.php';
 $PAGE_TITLE   = 'BRIDGE — Our Services';
 $BODY_CLASS   = 'inner-page';
+$MAIN_CLASS   = 'services-page inner-page-top';
 require __DIR__ . '/includes/config.php';
 include   __DIR__ . '/includes/header.php';
 

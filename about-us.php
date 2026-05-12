@@ -2,6 +2,7 @@
 $CURRENT_PAGE = 'about-us.php';
 $PAGE_TITLE   = 'BRIDGE — About Us';
 $BODY_CLASS   = 'inner-page';
+$MAIN_CLASS   = 'about-page inner-page-top';
 require __DIR__ . '/includes/config.php';
 include   __DIR__ . '/includes/header.php';
 
@@ -15,7 +16,7 @@ $PRINCIPLES = [
 ];
 ?>
 
-<section class="banner inner-page-top" id="about">
+<section class="banner" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">

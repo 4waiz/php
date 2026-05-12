@@ -44,4 +44,4 @@ $bodyClass = $BODY_CLASS ?? '';
     </div>
 
     <?php include __DIR__ . '/nav.php'; ?>
-    <main>
+    <main<?= isset($MAIN_CLASS) ? ' class="' . htmlspecialchars($MAIN_CLASS) . '"' : '' ?>>
