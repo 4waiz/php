@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "php build.php",
+  "buildCommand": null,
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false

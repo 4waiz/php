@@ -110,6 +110,15 @@ extra rewrites.
 
 ### Deploying
 
+Vercel's default build container doesn't include PHP, so the workflow is:
+
+1. Run `php build.php` locally — this updates `dist/`.
+2. Commit `dist/` along with your other changes.
+3. Deploy.
+
+`vercel.json` has `buildCommand: null` and `outputDirectory: dist`, so
+Vercel simply serves the pre-built `dist/` folder — no PHP needed in the cloud.
+
 Option A — Vercel CLI:
 
 ```bash
@@ -118,18 +127,22 @@ vercel                 # first deploy (prompts for project name)
 vercel --prod          # production deploy
 ```
 
-Vercel reads `vercel.json` and runs `php build.php` for you. Output dir is `dist`.
-
 Option B — Git import:
 
-1. Push this repo to GitHub.
+1. Push this repo (including `dist/`) to GitHub.
 2. Go to vercel.com → New Project → import the repo.
 3. Vercel auto-detects `vercel.json`; no overrides needed.
 
 ### Re-rendering after content changes
 
-Anytime you edit a section/partial or `includes/config.php`, run `php build.php`
-again. (Vercel will run it automatically on every deploy.)
+Anytime you edit a section, partial, or `includes/config.php`:
+
+```bash
+php build.php
+git add dist
+git commit -m "rebuild"
+git push   # triggers Vercel deploy if Git is connected
+```
 
 ## Notes
 
