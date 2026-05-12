@@ -1,0 +1,46 @@
+[Tue May 12 22:49:50 2026] PHP 8.3.31 Development Server (http://localhost:8000) started
+[Tue May 12 22:49:52 2026] [::1]:55141 Accepted
+[Tue May 12 22:49:52 2026] [::1]:55141 [200]: GET /index.php
+[Tue May 12 22:49:52 2026] [::1]:55141 Closing
+[Tue May 12 22:52:33 2026] [::1]:61453 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61453 [200]: GET /index.php
+[Tue May 12 22:52:33 2026] [::1]:61453 Closing
+[Tue May 12 22:52:33 2026] [::1]:61454 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61454 [200]: GET /about-us.php
+[Tue May 12 22:52:33 2026] [::1]:61454 Closing
+[Tue May 12 22:52:33 2026] [::1]:61455 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61455 [200]: GET /our-services.php
+[Tue May 12 22:52:33 2026] [::1]:61455 Closing
+[Tue May 12 22:52:33 2026] [::1]:61456 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61456 [200]: GET /ecosystem.php
+[Tue May 12 22:52:33 2026] [::1]:61456 Closing
+[Tue May 12 22:52:33 2026] [::1]:61457 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61457 [200]: GET /news.php
+[Tue May 12 22:52:33 2026] [::1]:61457 Closing
+[Tue May 12 22:52:33 2026] [::1]:61458 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61458 [200]: GET /contact-us.php
+[Tue May 12 22:52:33 2026] [::1]:61458 Closing
+[Tue May 12 22:52:33 2026] [::1]:61459 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61459 [200]: HEAD /assets/css/main.css
+[Tue May 12 22:52:33 2026] [::1]:61459 Closing
+[Tue May 12 22:52:33 2026] [::1]:61460 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61460 [200]: HEAD /assets/js/main.js
+[Tue May 12 22:52:33 2026] [::1]:61460 Closing
+[Tue May 12 22:52:33 2026] [::1]:61461 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61461 [200]: HEAD /assets/images/logo_bridge_.svg
+[Tue May 12 22:52:33 2026] [::1]:61461 Closing
+[Tue May 12 22:52:33 2026] [::1]:61462 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61462 [200]: HEAD /assets/css/fonts.css
+[Tue May 12 22:52:33 2026] [::1]:61462 Closing
+[Tue May 12 22:52:33 2026] [::1]:61463 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61463 [200]: HEAD /assets/fonts/HalyardDisplay-Regular.woff2
+[Tue May 12 22:52:33 2026] [::1]:61463 Closing
+[Tue May 12 22:52:33 2026] [::1]:61464 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61464 [200]: HEAD /assets/images/about-bg.jpeg
+[Tue May 12 22:52:33 2026] [::1]:61464 Closing
+[Tue May 12 22:52:33 2026] [::1]:61465 Accepted
+[Tue May 12 22:52:33 2026] [::1]:61465 [200]: HEAD /assets/images/news_01.webp
+[Tue May 12 22:52:33 2026] [::1]:61465 Closing
+[Tue May 12 22:55:36 2026] [::1]:52843 Accepted
+[Tue May 12 22:55:36 2026] [::1]:52843 [200]: GET /index.php
+[Tue May 12 22:55:36 2026] [::1]:52843 Closing
