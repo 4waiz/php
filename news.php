@@ -2,6 +2,7 @@
 $CURRENT_PAGE = 'news.php';
 $PAGE_TITLE   = 'BRIDGE — News';
 $BODY_CLASS   = 'inner-page';
+$MAIN_CLASS   = 'news-page inner-page-top';
 require __DIR__ . '/includes/config.php';
 include   __DIR__ . '/includes/header.php';
 
@@ -12,7 +13,7 @@ $slugify = function (string $s): string {
 };
 ?>
 
-<section class="news-page__section inner-page-top">
+<section class="news-page__section">
     <div class="container">
         <div class="row">
             <div class="col-12">

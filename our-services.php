@@ -98,7 +98,7 @@ $SERVICE_PANELS = [
 ];
 ?>
 
-<section class="services-page__hero inner-page-top">
+<section class="services-page__hero">
     <div class="container">
         <div class="row">
             <div class="col-12">

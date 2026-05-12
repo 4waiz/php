@@ -1,12 +1,13 @@
 <?php
 $CURRENT_PAGE = 'contact-us.php';
 $PAGE_TITLE   = 'BRIDGE — Contact Us';
-$BODY_CLASS   = 'inner-page contact-page';
+$BODY_CLASS   = 'inner-page';
+$MAIN_CLASS   = 'contact-page inner-page-top';
 require __DIR__ . '/includes/config.php';
 include   __DIR__ . '/includes/header.php';
 ?>
 
-<section class="contact contact-page__section inner-page-top">
+<section class="contact contact-page__section">
     <div class="container">
         <div class="row">
             <div class="col-12">

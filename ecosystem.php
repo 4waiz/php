@@ -2,11 +2,12 @@
 $CURRENT_PAGE = 'ecosystem.php';
 $PAGE_TITLE   = 'BRIDGE — Our Ecosystem';
 $BODY_CLASS   = 'inner-page';
+$MAIN_CLASS   = 'ecosystem-page inner-page-top';
 require __DIR__ . '/includes/config.php';
 include   __DIR__ . '/includes/header.php';
 ?>
 
-<section class="ecosystem-page__hero inner-page-top">
+<section class="ecosystem-page__hero">
     <div class="container">
         <div class="row">
             <div class="col-12">
