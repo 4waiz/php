@@ -99,6 +99,7 @@ $CONTACT = [
  * $orange_first true => first arrow is orange (#FE5620), second is white
  * $orange_first false => both white (hero button style)
  */
+if (!function_exists('bridge_btn_icon')):
 function bridge_btn_icon(bool $orange_first = true, string $second_color = 'white'): string {
     $a_color = $orange_first ? '#FE5620' : 'white';
     $b_color = $second_color;
@@ -113,7 +114,10 @@ function bridge_btn_icon(bool $orange_first = true, string $second_color = 'whit
         . '</span>';
 }
 
+endif;
+
 /** Helper: render the service-card arrow (uses currentColor). */
+if (!function_exists('bridge_service_arrow')):
 function bridge_service_arrow(): string {
     return '<span class="services__arrow" aria-hidden="true">'
         . '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">'
@@ -121,3 +125,4 @@ function bridge_service_arrow(): string {
         . '</svg>'
         . '</span>';
 }
+endif;

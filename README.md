@@ -80,6 +80,57 @@ from the live BRIDGE site. See [`assets/ASSET_SOURCES.md`](assets/ASSET_SOURCES.
 The hero background uses Vimeo's player iframe and is the only third-party
 embed kept inline. Google Fonts (Almarai, Montserrat) load from `fonts.googleapis.com`.
 
+## Deploy to Vercel (static)
+
+The site has no server-side state, so it can be pre-rendered to static HTML and
+deployed anywhere that serves files. `build.php` does this:
+
+```bash
+php build.php
+```
+
+Output lands in `./dist/` (rebuilt every run):
+
+```
+dist/
+  index.html
+  about-us.html
+  our-services.html
+  ecosystem.html
+  news.html
+  contact-us.html
+  site.webmanifest
+  assets/...
+```
+
+The builder also rewrites every internal `*.php` link to a clean URL
+(`about-us.php` → `/about-us`), matching the `cleanUrls: true` setting in
+`vercel.json`. So `/about-us`, `/news`, etc. work on Vercel without any
+extra rewrites.
+
+### Deploying
+
+Option A — Vercel CLI:
+
+```bash
+npm i -g vercel        # one-time
+vercel                 # first deploy (prompts for project name)
+vercel --prod          # production deploy
+```
+
+Vercel reads `vercel.json` and runs `php build.php` for you. Output dir is `dist`.
+
+Option B — Git import:
+
+1. Push this repo to GitHub.
+2. Go to vercel.com → New Project → import the repo.
+3. Vercel auto-detects `vercel.json`; no overrides needed.
+
+### Re-rendering after content changes
+
+Anytime you edit a section/partial or `includes/config.php`, run `php build.php`
+again. (Vercel will run it automatically on every deploy.)
+
 ## Notes
 
 - The page-intro loader, hero text/CTA reveal, and "title-animation" stagger

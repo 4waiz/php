@@ -1,4 +1,6 @@
 .scratch/
+dist/
+.vercel
 *.log
 .DS_Store
 Thumbs.db
